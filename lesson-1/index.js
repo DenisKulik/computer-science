@@ -44,3 +44,26 @@ for (let i = 1; i < numbers.length; i++) {
         max = number
     }
 }
+
+// Count
+const fruits = ['apple', 'banana', 'orange', 'pineapple', 'banana', 'apple']
+
+let applesCount = 0
+
+for (let i = 0; i < fruits.length; i++) {
+    const fruit = fruits[i]
+    if (fruit === 'apple') {
+        applesCount++
+    }
+}
+
+let fruits = {}
+
+for (let i = 0; i < fruits.length; i++) {
+    const fruit = fruits[i]
+    if (!fruits[fruit]) {
+        fruits[fruit] = 1
+    } else {
+        fruits[fruit]++
+    }
+}
